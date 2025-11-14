@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Copa do Mundo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row bg-light">
+            <div class="col my-3">
+                <header>
+                    <h1 class="text-center display-4 p-3">Quiz Copa Do Mundo</h1>
+                </header>
+            </div>
+        </div>
+
+        <main>
+            <div class="row ">
+                <div class="col-md-3 p-2">
+                    <section class="border rounded p-3">
+                        <h4 class="text-primary border-bottom">1. Qual país tem mais titulos da copa do mundo</h3>
+
+                        <label for="p1" class="form-label">Alemanha</label>
+                        <input type="radio" name="p1" class="form-check" value="Alemanha">
+                        
+                        <label for="p1" class="form-label">Itália</label>
+                        <input type="radio" name="p1" class="form-check" value="Itália">
+
+                        <label for="p1" class="form-label">Brasil</label>
+                        <input type="radio" name="p1" class="form-check" value="Brasil">
+
+                        <label for="p1" class="form-label">Argentina</label>
+                        <input type="radio" name="p1" class="form-check" value="Argentina">
+
+                        <button type="button" class="btn btn-primary" onclick="resP1()">Enviar</button>
+                        <p id="result"></p>
+                    </section>
+                </div>
+
+                <div class="col-md-3 p-2">
+                    <section class="m-2 border rounded p-3">
+                        <h4 class="text-primary border-bottom">2. Em que ano o Brasil ganhou sua ultima copa do mundo</h4>
+
+                        <label for="p2" class="form-label">1994</label>
+                        <input type="radio" class="form-check" name="p2" value="1994">
+
+                        <label for="p2" class="form-label">1998</label>
+                        <input type="radio" class="form-check" name="p2" value="1998">
+
+                        <label for="p2" class="form-label">2002</label>
+                        <input type="radio" class="form-check" name="p2" value="2002">
+
+                        <label for="p2" class="form-label">2006</label>
+                        <input type="radio" class="form-check" name="p2" value="2006">
+
+                        <button type="button" class="btn btn-primary" onclick="resP2()">Enviar</button>
+                        <p id="result2"></p>
+                    </section>
+                </div>
+
+                <div class="col-md-3 p-2">
+                    <section class=" border rounded p-3">
+                        <h4 class="text-primary border-bottom">3. Onde foi realizada a Copa de 1998</h4>
+
+                        <label for="p3" class="form-label">França</label>
+                        <input type="radio" name="p3" value="França" class="form-check">
+
+                        <label for="p3" class="form-label">Brasil</label>
+                        <input type="radio" name="p3" value="Brasil" class="form-check">
+
+                        <label for="p3" class="form-label">Japão</label>
+                        <input type="radio" name="p3" value="Japão" class="form-check">
+
+                        <label for="p3" class="form-label">Uruguai</label>
+                        <input type="radio" name="p3" value="Uruguai" class="form-check">
+
+                        <button type="button" class="btn btn-primary" onclick="resP3()">Enviar</button>
+                        <p id="result3"></p>
+                    </section>
+                </div>
+
+                <div class="col-md-3 p-2">
+                    <section class=" border rounded p-3">
+                       <h4 class="text-primary border-bottom">4. Quem foi o artilheiro da copa de 2022</h4>
+
+                        <label for="p4" class="form-label">Mbappé</label>
+                        <input type="radio" name="p4" value="Mbappé" class="form-check">
+
+                        <label for="p3" class="form-label">Cristiano Ronaldo</label>
+                        <input type="radio" name="p4" value="Cristiano Ronaldo" class="form-check">
+
+                        <label for="p3" class="form-label">Neymar</label>
+                        <input type="radio" name="p4" value="Neymar" class="form-check">
+
+                        <label for="p3" class="form-label">Messi</label>
+                        <input type="radio" name="p4" value="Messi" class="form-check">
+
+                        <button type="button" class="btn btn-primary" onclick="resP4()">Enviar</button>
+                        <p id="result4"></p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-danger" onclick="pontuacao()">Verificar pontuação</button>
+                <span id="pont"></span>
+            </div>
+        </main>
+
+
+        <footer class="bg-dark text-white m-4 p-4 text-center">Projeto desenvolvido com HTML, CSS e Java Script</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
